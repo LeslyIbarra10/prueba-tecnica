@@ -120,13 +120,34 @@
   }
 }
 
-.pagination {
+.paginacion {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
+
+.paginacion button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4338ca;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.paginacion button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.page-number {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 
 .page-info {
   font-size: 16px;
