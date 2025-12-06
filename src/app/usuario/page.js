@@ -24,16 +24,16 @@ export default function Page() {
   }, []);
 
   // Filtrar por nombre
-  const filteredUsers = users.filter((user) =>
+  const filtrarUsuarios = users.filter((user) =>
     user.name.toLowerCase().includes(search.toLowerCase())
   );
 
   // LOGICA DE PAGINACIÓN
   const indiceUltUs = pagActual * usuariosPagina;
   const indexOfFirstUser = indiceUltUs - usuariosPagina;
-  const currentUsers = filteredUsers.slice(indexOfFirstUser, indiceUltUs);
+  const currentUsers = filtrarUsuarios.slice(indexOfFirstUser, indiceUltUs);
 
-  const totalPages = Math.ceil(filteredUsers.length / usuariosPagina);
+  const totalPages = Math.ceil(filtrarUsuarios.length / usuariosPagina);
 
   const pagSig = () => {
     if (pagActual < totalPages) setpagActual(pagActual + 1);
