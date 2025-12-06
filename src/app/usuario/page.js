@@ -85,7 +85,7 @@ export default function Page() {
           icon="pi pi-angle-left"
           onClick={prevPage}
           disabled={pagActual === 1}
-        />
+        ></Button>
         <span className="page-info">
           Página {pagActual} de {totalPages}
         </span>
@@ -95,7 +95,7 @@ export default function Page() {
           iconPos="right"
           onClick={pagSig}
           disabled={pagActual === totalPages}
-        />
+        ></Button>
       </div>
 
       {/* MODAL DE DETALLES */}
