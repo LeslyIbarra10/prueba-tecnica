@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "primereact/button";
+import { InputText } from "primereact/inputtext";
 import axios from "axios";
 import "primeicons/primeicons.css";
 import "./users.css";
@@ -52,16 +53,16 @@ export default function Page() {
         ></i>
         Lista de Usuarios
       </h2>
-      <input
+      <InputText
         type="text"
         placeholder="Buscar por nombre..."
-        className="search-input"
+        className="search-inputText"
         value={search}
         onChange={(e) => {
           setSearch(e.target.value);
           setpagActual(1); // reinicia a la pagina 1
         }}
-      />
+      ></InputText>
       <div className="users-grid">
         {currentUsers.map((user) => (
           <div
