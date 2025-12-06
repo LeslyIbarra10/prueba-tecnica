@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "primereact/button";
-import "primeicons/primeicons.css";
 import axios from "axios";
+import "primeicons/primeicons.css";
 import "./users.css";
 
 export default function Page() {
